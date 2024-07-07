@@ -17,7 +17,7 @@ const Checkout = () => {
 
     return (
         <div>
-            <div className="font-[sans-serif] bg-white sm:w-[561px] md:w-[761px] lg:w-[961px] xl:w-[1271px] mx-auto w-full relative">
+            <div className="border font-[sans-serif] bg-white sm:w-[561px] md:w-[761px] lg:w-[961px] xl:w-[1271px] mx-auto w-full relative">
                 <div>
                     <div className="grid lg:grid-cols-3 gap-6">
                         <div className="px-5 lg:col-span-2 max-lg:order-1 !pr-0 max-w-4xl mx-auto w-full">

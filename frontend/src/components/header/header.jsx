@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./header.css";
 import logo from "../../../src/assets/Eclipse-logo.png";
-import Cart from "../cart/cart"
+import Cart from "../cart/cart";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -155,7 +155,7 @@ const Header = () => {
                     <summary className="cursor-pointer mb-4 w-max">
                       <span className="font-semibold hover:text-[#C4932C] duration-300">Buy a Watch</span>
                     </summary>
-                    <ul className="border relative text-left space-y-1 top-5 xl:-left-[292px] lg:-left-[136px] sm:w-[561px] md:w-[761px] lg:w-[961px] xl:w-[1271px]">
+                    <ul className="border bg-white relative text-left space-y-1 top-5 xl:-left-[292px] lg:-left-[136px] sm:w-[561px] md:w-[761px] lg:w-[961px] xl:w-[1271px]">
                       <li>
                         <details>
                           <summary className="p-3 cursor-pointer">
@@ -196,20 +196,22 @@ const Header = () => {
               <ListItem NavLink="/security">Security</ListItem>
             </div>
             <div className="flex justify-center items-center lg:gap-x-5 sm:mr-0 mr-[70px]">
-              <div onClick={toggleCart} className="flex justify-center items-center gap-x-4 mt-[5px]">
-                <div className="cursor-pointer flex justify-center items-center">
-                  <div className="relative">
-                    <div className="absolute left-[13px] -top-[12px]">
-                      <p className="flex h-2 w-2 items-center justify-center rounded-full bg-[#C4932C] p-[10px] text-xs text-white">2</p>
-                    </div>
-                    <div>
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 23 30" strokeWidth="1.5" stroke="currentColor" className="h-5 w-5">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M21.435 4.055a5.61 5.61 0 00-7.933 0L12 5.557l-1.502-1.502a5.61 5.61 0 00-7.933 7.933l1.502 1.502 7.933 7.933 7.933-7.933 1.502-1.502a5.61 5.61 0 000-7.933z" />
-                      </svg>
+              <div className="flex justify-center items-center gap-x-4 mt-[5px]">
+                <a href="/wishlist">
+                  <div className="cursor-pointer flex justify-center items-center">
+                    <div className="relative">
+                      <div className="absolute left-[13px] -top-[12px]">
+                        <p className="flex h-2 w-2 items-center justify-center rounded-full bg-[#C4932C] p-[10px] text-xs text-white">2</p>
+                      </div>
+                      <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 23 30" strokeWidth="1.5" stroke="currentColor" className="h-5 w-5">
+                          <path strokeLinecap="round" strokeLinejoin="round" d="M21.435 4.055a5.61 5.61 0 00-7.933 0L12 5.557l-1.502-1.502a5.61 5.61 0 00-7.933 7.933l1.502 1.502 7.933 7.933 7.933-7.933 1.502-1.502a5.61 5.61 0 000-7.933z" />
+                        </svg>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="cursor-pointer flex justify-center items-center">
+                </a>
+                <div onClick={toggleCart} className="cursor-pointer flex justify-center items-center">
                   <div className="relative">
                     <div className="absolute left-3 -top-3">
                       <p className="flex h-2 w-2 items-center justify-center rounded-full bg-[#C4932C] p-[10px] text-xs text-white">3</p>
