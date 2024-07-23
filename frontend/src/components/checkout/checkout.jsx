@@ -17,14 +17,13 @@ const Checkout = () => {
 
     return (
         <div>
-            <div className="border font-[sans-serif] bg-white sm:w-[561px] md:w-[761px] lg:w-[961px] xl:w-[1271px] mx-auto w-full relative">
+            <div className="rounded-lg border font-[sans-serif] bg-white sm:w-[561px] md:w-[761px] lg:w-[961px] xl:w-[1271px] mx-auto w-full relative">
                 <div>
                     <div className="grid lg:grid-cols-3 gap-6">
                         <div className="px-5 lg:col-span-2 max-lg:order-1 !pr-0 max-w-4xl mx-auto w-full">
                             <div className="text-center max-lg:hidden">
-                                <h2 className="text-3xl font-extrabold text-gray-800 inline-block border-b-2 border-gray-800 pb-1">Checkout</h2>
+                                <h2 className="text-3xl font-extrabold text-gray-800 inline-block pb-1">Checkout</h2>
                             </div>
-
                             <form className="lg:mt-8">
                                 <div>
                                     <h2 className="text-xl font-bold text-gray-800">Shipping info</h2>
@@ -177,7 +176,7 @@ const Checkout = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="flex flex-wrap gap-4 mt-8">
+                                <div className="flex flex-wrap gap-4 my-8">
                                     <button
                                         type="button"
                                         className="min-w-[150px] px-6 py-3.5 text-sm bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300"
@@ -194,7 +193,7 @@ const Checkout = () => {
                             </form>
                         </div>
 
-                        <div className="bg-gray-100 lg:h-screen lg:sticky lg:top-0">
+                        <div className="bg-gray-100 lg:h-screen lg:sticky lg:top-0 rounded-lg overflow-hidden">
                             <div className="relative h-full">
                                 <div className="px-5 overflow-auto max-lg:max-h-[400px] lg:h-[calc(100vh-60px)] max-lg:mb-8">
                                     <h2 className="text-xl font-bold text-gray-800 mt-2">Order Summary</h2>

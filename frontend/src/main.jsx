@@ -11,7 +11,7 @@ import Faq from './pages/faq/faq.jsx';
 import Watches from './pages/watches/watches.jsx';
 import Checkout from './components/checkout/checkout.jsx';
 import Wishlist from './components/wishlist/wishlist.jsx';
-
+import Register from './components/register/register.jsx'
 
 const router = createBrowserRouter([
   {
@@ -49,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: '/wishlist',
         element: <Wishlist />
+      },
+      {
+        path: '/register',
+        element: <Register />
       },
     ]
   }
